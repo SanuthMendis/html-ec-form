@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Application Form</title>
+   <link rel="stylesheet" href="project1.css">
+   <script src="project1.js"></script>
+</head>
+
+<body>
+    <div class="div1">
+     <h1>EC Form</h1>
+     <div class="div2">
+        <table>
+            <form action="project1.php" method="POST" name="mform" onsubmit="return validation()">
+                <tr>
+                    <td>
+                        <label>Name: </label>
+                    </td>
+                    <td>
+                        <input type="text"  name="name" id="name" placeholder="Enter your name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Age: </label>
+                    </td>
+                    <td>
+                        <input type="number" name="age" id="age" placeholder="Enter your age"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <label>Email: </label>
+                    </td>
+                    <td>
+                       <input type="email" name="email" id="email" placeholder="Enter your Email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Sickness: </label>
+                    </td>
+                    <td>
+                        <select id="sickness" name="sickness"> 
+                            <option value=" ">None</option>
+                            <option value="Fever">Fever</option>
+                            <option value="Cough">Cough</option>
+                            <option value="HIV">HIV</option>
+                            <option value="Common Cold">Common cold</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Describe Symptoms: </label>
+                    </td>
+                    <td>
+                       <textarea id="textarea" name="symptoms" placeholder="Enter your symptoms"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="submit" id="submit" value="Send EC Form" class="sbutton" >
+                    </td>
+                </tr>
+            </form>
+        </table> 
+     </div>
+
+    </div>
+</body>
+</html>
